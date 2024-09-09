@@ -1,0 +1,10 @@
+@import "../../utils/consts";
+
+.headercontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1240px;
+    min-width: 335px;
+    margin: 20px;
+}

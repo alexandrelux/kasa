@@ -1,0 +1,37 @@
+@import "../../utils/consts";
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 28px;
+
+        @media (min-width: $trigger-point) {
+            gap: 66px;
+        }
+    }
+
+    li {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        @media (min-width: $trigger-point) {
+            font-size: 24px;
+            text-transform: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}

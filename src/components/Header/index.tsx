@@ -1,18 +1,14 @@
-import { Link } from "react-router-dom";
+import Logo from "../Logos/logo";
+import Nav from "../Nav/Nav";
+import "./index.scss";
 
 const Header = () => {
     return (
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                </ul>
-            </nav>
+            <div className="headercontent">
+                <Logo />
+                <Nav />
+            </div>
         </header>
     );
 };
