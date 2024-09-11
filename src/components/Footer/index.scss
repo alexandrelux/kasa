@@ -1,0 +1,30 @@
+@import "../../utils/consts";
+
+footer {
+    height: $footer-height;
+    width: 100%;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 375px;
+
+    img {
+        width: 122px;
+    }
+
+    p {
+        font-size: 12px;
+        padding-left: 140px;
+        padding-right: 140px;
+        text-align: center;
+        font-weight: 500;
+
+        @media (min-width: $trigger-point) {
+            font-size: 24px;
+        }
+    }
+}
