@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
+import "./Errorpage.scss";
 
 const Errorpage = () => {
     return (
-        <div>
-            <h2>Nothing to see here!</h2>
-            <p>
-                <Link to="/">Go to the home page</Link>
+        <article>
+            <h1>404</h1>
+            <p className="description">
+                Oups! La page que vous demandez n'existe pas.
             </p>
-        </div>
+            <Link className="link" to="/">
+                Retourner sur la page d’accueil
+            </Link>
+        </article>
     );
 };
 
