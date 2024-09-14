@@ -1,0 +1,46 @@
+@import "../../utils/consts";
+
+.accommodationListComponent {
+    border-radius: 25px;
+    background-color: #f6f6f6;
+
+    @media (min-width: $trigger-point) {
+        background-color: #f6f6f6;
+    }
+}
+
+.accommodationList {
+    margin: auto;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+
+    @media (min-width: $trigger-point) {
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .accommodation-list-item {
+        background-size: cover;
+        background-position: center;
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: end;
+
+        @media (min-width: $trigger-point) {
+            height: 340px;
+        }
+
+        span {
+            margin: 20px;
+            color: white;
+            font-weight: 500;
+        }
+    }
+}

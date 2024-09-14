@@ -5,13 +5,15 @@ import "./layout.scss";
 
 const Layout = () => {
     return (
-        <div className="wrapper">
+        <>
             <Header />
             <main>
-                <Outlet />
+                <div className="content">
+                    <Outlet />
+                </div>
             </main>
             <Footer />
-        </div>
+        </>
     );
 };
 

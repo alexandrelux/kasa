@@ -1,20 +1,27 @@
+import AccommodationList from "../components/AccommodationList";
+import Cover from "../components/Cover";
+import { Accommodation } from "../models/Accommodation";
+import { appartments } from "../utils/const";
+
 const Homepage = () => {
+    // TODO use this hook when the backend will be developed
+    // const { data, loading, error } = useFetch(API_URL);
+    const loading = false;
+    const error = null;
+    const data: Accommodation[] = appartments;
+
+    if (loading) return <div>Loading...</div>;
+
+    if (error) return <div>Error: {error}</div>;
+
     return (
-        <div>
-            <h1>Home</h1>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
-            </p>
-        </div>
+        <>
+            <div className="spacer" />
+            <Cover>Chez vous, partout et ailleurs</Cover>
+            <div className="spacer" />
+            <AccommodationList accommodations={data} />
+            <div className="spacer" />
+        </>
     );
 };
 

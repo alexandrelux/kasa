@@ -4,7 +4,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1240px;
+    max-width: $maxWidth;
     min-width: 335px;
-    margin: 20px;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $trigger-point) {
+        margin-top: 46px;
+    }
 }
