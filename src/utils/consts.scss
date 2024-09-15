@@ -10,3 +10,11 @@ $minWidth: 335px;
         height: 48px;
     }
 }
+
+.spacer2030 {
+    height: 20px;
+
+    @media (min-width: $trigger-point) {
+        height: 30px;
+    }
+}

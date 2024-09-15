@@ -1,19 +1,41 @@
+import CoverAbout from "../components/CoverAbout";
+import Dropdown from "../components/Dropdown";
+
 const Aboutpage = () => {
     return (
         <div>
-            <h1>About</h1>
-            <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem
-                Ipsum as their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their infancy.
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).
-            </p>
+            <div className="spacer" />
+            <CoverAbout />
+            <div className="spacer" />
+            <Dropdown title="Fiabilité">
+                Les annonces postées sur Kasa garantissent une fiabilité totale.
+                Les photos sont conformes aux logements, et toutes les
+                informations sont régulièrement vérifiées par nos équipes.
+            </Dropdown>
+            <div className="spacer2030" />
+            <Dropdown title="Respect">
+                La bienveillance fait partie des valeurs fondatrices de Kasa.
+                Tout comportement à discriminatoire ou de perturbation du
+                voisinage entraînera un exclusion de notre plateforme.
+            </Dropdown>
+            <div className="spacer2030" />
+            <Dropdown title="Service">
+                La qualité du service est au coeur de notre engagement chez
+                Kasa; Nous veillons à ce que chaque interaction, que ce soit
+                avec nos hôtes ou nos locataires, soit empreinte de respect et
+                de bienveillance.
+            </Dropdown>
+            <div className="spacer2030" />
+            <Dropdown title="Sécurité">
+                La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes
+                que pour les voyageurs, chaque logement correspond aux critères
+                de sécurité établis par nos services? En laissant une note aussi
+                bien à l’hote qu’au locataire, cela permet à nos équipes de
+                vérifier que les standards sont bien respectés. Nous organisions
+                également des ateliers sur la sécurité domestique pour nos
+                hôtels.
+            </Dropdown>
+            <div className="spacer" />
         </div>
     );
 };

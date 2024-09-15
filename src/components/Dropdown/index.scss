@@ -1,0 +1,58 @@
+@import "../../utils/consts";
+
+.dropdown {
+    .titlebar {
+        background-color: #ff6060;
+        height: 30px;
+        color: white;
+        font-weight: 700;
+        padding-left: 12px;
+        padding-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        font-size: 13px;
+        margin-bottom: 0px;
+        cursor: pointer;
+
+        @media (min-width: $trigger-point) {
+            height: 54px;
+            font-size: 24px;
+            padding-left: 8px;
+            padding-right: 12px;
+        }
+
+        .icon {
+            transition: transform 0.3s ease;
+        }
+
+        .rotated {
+            transform: rotate(-180deg);
+        }
+    }
+    .description {
+        background-color: rgba(246, 246, 246, 0.45);
+        font-size: 12px;
+        padding: 0 15px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 0x;
+        padding-bottom: 0px;
+        margin: 0px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        transform-origin: top center;
+
+        @media (min-width: $trigger-point) {
+            font-size: 18px;
+        }
+
+        &.open {
+            max-height: 500px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}

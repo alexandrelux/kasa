@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.c3e388df.css",
+    "main.js": "/kasa/static/js/main.bf8361ab.js",
+    "static/media/jpg": "/kasa/static/media/e270fc8fc902a1eb738458e7b29c1899.0f820b85d9a6a7e177b3.jpg",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/kasa/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
+    "index.html": "/kasa/index.html",
+    "main.c3e388df.css.map": "/kasa/static/css/main.c3e388df.css.map",
+    "main.bf8361ab.js.map": "/kasa/static/js/main.bf8361ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3e388df.css",
+    "static/js/main.bf8361ab.js"
+  ]
+}
