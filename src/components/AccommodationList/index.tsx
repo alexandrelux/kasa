@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Accommodation } from "../../models/Accommodation";
 import "./index.scss";
 
@@ -11,15 +12,20 @@ const AccommodationList = ({
             <div className="accommodationList">
                 {accommodations &&
                     accommodations.map((accommodation) => (
-                        <div
-                            key={accommodation.id}
-                            className="accommodation-list-item"
-                            style={{
-                                backgroundImage: `url(${accommodation.cover})`,
-                            }}
+                        <Link
+                            key={`link${accommodation.id}`}
+                            to={`/?id=${accommodation.id}`}
                         >
-                            <span>{accommodation.title}</span>
-                        </div>
+                            <div
+                                key={accommodation.id}
+                                className="accommodation-list-item"
+                                style={{
+                                    backgroundImage: `url(${accommodation.cover})`,
+                                }}
+                            >
+                                <span>{accommodation.title}</span>
+                            </div>
+                        </Link>
                     ))}
             </div>
         </div>

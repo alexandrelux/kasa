@@ -1,0 +1,140 @@
+@import "../../utils/const";
+
+.accommodationDetails {
+    .accommodationDetailsContents {
+        @media (min-width: $trigger-point) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            color: $base-color;
+            margin-top: 6px;
+            margin-bottom: 0px;
+            line-height: 24px;
+
+            @media (min-width: $trigger-point) {
+                font-size: 36px;
+                margin-top: 40px;
+            }
+        }
+
+        .location {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+
+            @media (min-width: $trigger-point) {
+                font-size: 18px;
+                margin-top: 15px;
+            }
+        }
+
+        .tags {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+
+            @media (min-width: $trigger-point) {
+                margin-top: 22px;
+            }
+
+            div {
+                background-color: $base-color;
+                border-radius: 10px;
+                width: 84px;
+                height: 18px;
+                font-size: 10px;
+                font-weight: 700;
+                overflow: hidden;
+                text-align: center;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media (min-width: $trigger-point) {
+                    width: 115px;
+                    height: 25px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .ratingAndAuthor {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 14px;
+            margin-bottom: 18px;
+
+            @media (min-width: $trigger-point) {
+                flex-direction: column-reverse;
+                align-items: end;
+                margin-top: 18px;
+            }
+
+            .author {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                justify-items: center;
+                align-items: center;
+
+                .fullname {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: $base-color;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0px;
+                    justify-content: center;
+                    align-items: end;
+
+                    @media (min-width: $trigger-point) {
+                        font-size: 18px;
+                    }
+                }
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100%;
+                    margin: 0px;
+
+                    @media (min-width: $trigger-point) {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdownsAccommodationDetails {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+        flex-direction: column;
+
+        @media (min-width: $trigger-point) {
+            margin-top: 15px;
+            flex-direction: row;
+            gap: 80px;
+        }
+
+        > * {
+            width: 100%;
+
+            @media (min-width: $trigger-point) {
+                flex-basis: 0; /* Permet à flex-grow de s'appliquer correctement */
+                flex-grow: 1; /* Les enfants prennent le même espace */
+            }
+        }
+    }
+}

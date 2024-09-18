@@ -1,7 +1,7 @@
 import { ReactNode, useState } from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const Dropdown = ({
     title,
@@ -20,7 +20,7 @@ const Dropdown = ({
             <div className="titlebar" onClick={toggleDropdown}>
                 <div className="title">{title}</div>
                 <FontAwesomeIcon
-                    icon={faArrowUp}
+                    icon={faChevronUp}
                     className={`icon ${isOpen ? "rotated" : ""}`}
                 />
             </div>

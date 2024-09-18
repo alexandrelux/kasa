@@ -1,8 +1,8 @@
-@import "../../utils/consts";
+@import "../../utils/const";
 
 .dropdown {
     .titlebar {
-        background-color: #ff6060;
+        background-color: $base-color;
         height: 30px;
         color: white;
         font-weight: 700;
@@ -25,6 +25,11 @@
 
         .icon {
             transition: transform 0.3s ease;
+            font-size: 16px;
+
+            @media (min-width: $trigger-point) {
+                font-size: 28px;
+            }
         }
 
         .rotated {
@@ -45,14 +50,18 @@
         transition: max-height 0.3s ease, padding 0.3s ease;
         transform-origin: top center;
 
+        p {
+            line-height: 4px;
+        }
+
         @media (min-width: $trigger-point) {
             font-size: 18px;
         }
+    }
 
-        &.open {
-            max-height: 500px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
+    .open {
+        max-height: 500px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }

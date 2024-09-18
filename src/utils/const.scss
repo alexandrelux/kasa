@@ -1,0 +1,20 @@
+$base-color: #ff6060;
+$trigger-point: 600px;
+$footer-height: 209px;
+$maxWidth: 1240px;
+$minWidth: 335px;
+
+.spacer {
+    height: 26px;
+    @media (min-width: $trigger-point) {
+        height: 48px;
+    }
+}
+
+.spacer2030 {
+    height: 20px;
+
+    @media (min-width: $trigger-point) {
+        height: 30px;
+    }
+}

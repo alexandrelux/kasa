@@ -1,4 +1,4 @@
-@import "../../utils/consts";
+@import "../../utils/const";
 
 footer {
     height: $footer-height;
@@ -11,6 +11,16 @@ footer {
     justify-content: center;
     flex-direction: column;
     min-width: 375px;
+    margin-top: 26px;
+
+    @media (min-width: $trigger-point) {
+        gap: 25px;
+        justify-content: end;
+    }
+
+    @media (min-width: $trigger-point) {
+        margin-top: 48px;
+    }
 
     img {
         width: 122px;
@@ -18,8 +28,8 @@ footer {
 
     p {
         font-size: 12px;
-        padding-left: 140px;
-        padding-right: 140px;
+        padding-left: 130px;
+        padding-right: 130px;
         text-align: center;
         font-weight: 500;
 

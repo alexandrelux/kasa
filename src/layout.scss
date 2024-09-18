@@ -1,4 +1,4 @@
-@import "./utils/consts";
+@import "./utils/const";
 
 main {
     flex-grow: 1;
@@ -6,8 +6,4 @@ main {
     padding-right: 20px;
     max-width: $maxWidth;
     margin: auto;
-
-    @media (min-width: $trigger-point) {
-        min-height: 100vh;
-    }
 }

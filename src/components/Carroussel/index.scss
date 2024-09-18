@@ -1,0 +1,44 @@
+@import "../../utils/const";
+
+.carroussel {
+    position: relative;
+    color: white;
+    font-size: 20px;
+
+    @media (min-width: $trigger-point) {
+        font-size: 80px;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-top: 24px;
+        height: 255px;
+
+        @media (min-width: $trigger-point) {
+            height: 415px;
+            margin-top: 45px;
+        }
+    }
+
+    .chevronLeft {
+        position: absolute;
+        left: 6px;
+        top: 50%;
+
+        @media (min-width: $trigger-point) {
+            left: 30px;
+        }
+    }
+
+    .chevronRight {
+        position: absolute;
+        right: 6px;
+        top: 50%;
+
+        @media (min-width: $trigger-point) {
+            right: 30px;
+        }
+    }
+}
