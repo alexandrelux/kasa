@@ -24,7 +24,9 @@ const Dropdown = ({
                     className={`icon ${isOpen ? "rotated" : ""}`}
                 />
             </div>
-            <p className={`description ${isOpen ? "open" : ""}`}>{children}</p>
+            <div className={`description ${isOpen ? "open" : ""}`}>
+                {children}
+            </div>
         </div>
     );
 };

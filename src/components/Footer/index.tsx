@@ -3,7 +3,7 @@ import "./index.scss";
 const Footer = () => {
     return (
         <footer>
-            <img src="/images/logo_footer.svg" alt="Logo Footer" />
+            <img src="/kasa/images/logo_footer.svg" alt="Logo Footer" />
             <p>© 2020 Kasa. All rights reserved</p>
         </footer>
     );

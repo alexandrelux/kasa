@@ -8,7 +8,7 @@ const Errorpage = () => {
             <p className="description">
                 Oups! La page que vous demandez n'existe pas.
             </p>
-            <Link className="link" to="/">
+            <Link className="link" to="/kasa/">
                 Retourner sur la page d’accueil
             </Link>
         </article>

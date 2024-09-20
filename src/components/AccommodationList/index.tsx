@@ -14,7 +14,7 @@ const AccommodationList = ({
                     accommodations.map((accommodation) => (
                         <Link
                             key={`link${accommodation.id}`}
-                            to={`/?id=${accommodation.id}`}
+                            to={`/kasa/?id=${accommodation.id}`}
                         >
                             <div
                                 key={accommodation.id}

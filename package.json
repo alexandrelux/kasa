@@ -1,5 +1,6 @@
 {
     "name": "kasa",
+    "homepage": "https://alexandrelux.github.io/kasa/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
