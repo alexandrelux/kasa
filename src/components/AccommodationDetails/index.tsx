@@ -1,8 +1,8 @@
 import { Accommodation } from "../../models/Accommodation";
 import Carroussel from "../Carroussel";
 import Dropdown from "../Dropdown";
+import Stars from "../Stars";
 import "./index.scss";
-import ReactStars from "react-stars";
 
 const AccommodationDetails = ({
     accommodation,
@@ -29,14 +29,7 @@ const AccommodationDetails = ({
                 </div>
 
                 <div className="ratingAndAuthor">
-                    <ReactStars
-                        count={5}
-                        size={window.innerWidth >= 600 ? 36 : 20}
-                        color1={"#e3e3e3"}
-                        color2={"#ff6060"}
-                        edit={false}
-                        value={3}
-                    />
+                    <Stars number={parseInt(accommodation.rating)} />
                     <div className="author">
                         <div className="fullname">
                             <span className="accommodation-host-name">

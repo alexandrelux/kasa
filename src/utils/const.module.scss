@@ -1,0 +1,12 @@
+// Css module file with specific naming *.module.<css/scss/sass> can be natively import in *.tsx.
+
+$base-color: #ff6060;
+$inactive-color: #e3e3e3;
+$trigger-point: 600px;
+$footer-height: 209px;
+$maxWidth: 1240px;
+$minWidth: 335px;
+
+:export {
+    triggerPoint: $trigger-point;
+}

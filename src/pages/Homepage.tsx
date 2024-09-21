@@ -2,9 +2,9 @@ import AccommodationDetails from "../components/AccommodationDetails";
 import AccommodationList from "../components/AccommodationList";
 import Cover from "../components/Cover";
 import { Accommodation } from "../models/Accommodation";
-import { appartments } from "../utils/const";
 import { useSearchParams } from "react-router-dom";
 import Errorpage from "./Errorpage";
+import { appartments } from "../utils/const";
 
 const Homepage = () => {
     // TODO use this hook when the backend will be developed
@@ -26,11 +26,8 @@ const Homepage = () => {
     if (!queryValue) {
         return (
             <>
-                <div className="spacer" />
                 <Cover>Chez vous, partout et ailleurs</Cover>
-                <div className="spacer" />
                 <AccommodationList accommodations={data} />
-                <div className="spacer" />
             </>
         );
     } else {

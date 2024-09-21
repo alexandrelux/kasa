@@ -1,4 +1,4 @@
-@import "./utils/const";
+@import "./utils/const.module";
 
 main {
     flex-grow: 1;
@@ -6,4 +6,9 @@ main {
     padding-right: 20px;
     max-width: $maxWidth;
     margin: auto;
+}
+
+a,
+Link {
+    text-decoration: none;
 }

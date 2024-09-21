@@ -1,0 +1,18 @@
+@import "../../utils/const.module";
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    color: $inactive-color;
+    font-size: 14px;
+
+    @media (min-width: $trigger-point) {
+        font-size: 24px;
+        gap: 12px;
+    }
+
+    .active {
+        color: $base-color;
+    }
+}

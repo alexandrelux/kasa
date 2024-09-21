@@ -1,4 +1,4 @@
-@import "../../utils/const";
+@import "../../utils/const.module";
 
 .cover {
     background-size: cover;
@@ -14,12 +14,14 @@
     box-shadow: 0px 4px 4px 0px #00000040;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 26px;
 
     @media (min-width: $trigger-point) {
         height: 223px;
         justify-content: center;
         width: 100%;
         border-radius: 25px;
+        margin-top: 48px;
     }
 
     h1 {

@@ -1,8 +1,15 @@
-@import "../utils/const";
+@import "../utils/const.module";
 
 .dropdownsAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 26px;
+
     @media (min-width: $trigger-point) {
         margin-left: 100px;
         margin-right: 100px;
+        gap: 30px;
+        margin-top: 48px;
     }
 }
