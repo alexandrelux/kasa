@@ -15,6 +15,7 @@ const AccommodationList = ({
                         <Link
                             key={`link${accommodation.id}`}
                             to={`/kasa/?id=${accommodation.id}`}
+                            className="accommodation-list-item-link"
                         >
                             <div
                                 key={accommodation.id}
@@ -22,7 +23,8 @@ const AccommodationList = ({
                                 style={{
                                     backgroundImage: `url(${accommodation.cover})`,
                                 }}
-                            >
+                            ></div>
+                            <div className="filter">
                                 <span>{accommodation.title}</span>
                             </div>
                         </Link>

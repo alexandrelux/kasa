@@ -29,16 +29,24 @@ const Carroussel = ({ accommodation }: { accommodation: Accommodation }) => {
     return (
         <div className="carroussel">
             <img src={accommodation.pictures[i]} alt={accommodation.title} />
-            <FontAwesomeIcon
-                onClick={handleChevronLeft}
-                className="chevronLeft"
-                icon={faChevronLeft}
-            />
-            <FontAwesomeIcon
-                onClick={handleChevronRight}
-                className="chevronRight"
-                icon={faChevronRight}
-            />
+
+            {accommodation.pictures.length > 1 ? (
+                <>
+                    <FontAwesomeIcon
+                        onClick={handleChevronLeft}
+                        className="chevronLeft"
+                        icon={faChevronLeft}
+                    />
+                    <FontAwesomeIcon
+                        onClick={handleChevronRight}
+                        className="chevronRight"
+                        icon={faChevronRight}
+                    />
+                    <span className="compteur">{`${i + 1}/${
+                        accommodation.pictures.length
+                    }`}</span>
+                </>
+            ) : null}
         </div>
     );
 };

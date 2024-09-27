@@ -27,24 +27,50 @@
         padding: 50px;
     }
 
-    .accommodation-list-item {
-        background-size: cover;
-        background-position: center;
-        width: 335px;
-        height: 255px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: end;
+    .accommodation-list-item-link {
+        position: relative;
 
-        @media (min-width: $trigger-point) {
-            height: 340px;
+        .accommodation-list-item {
+            background-size: cover;
+            background-position: center;
+            width: $cardWidht;
+            height: $cardHeight;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: end;
+
+            @media (min-width: $trigger-point) {
+                height: $cardHeightDesktop;
+            }
         }
 
-        span {
-            margin: 20px;
-            color: white;
-            font-weight: 500;
+        .filter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $cardWidht;
+            height: $cardHeight;
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(10, 10, 10, 0) 42%,
+                rgba(4, 4, 4, 0.205) 99.99%,
+                rgba(0, 0, 0, 0.5) 100%
+            );
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            span {
+                color: white;
+                font-weight: 500;
+                margin: 20px;
+            }
+
+            @media (min-width: $trigger-point) {
+                height: $cardHeightDesktop;
+            }
         }
     }
 }

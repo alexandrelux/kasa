@@ -41,4 +41,21 @@
             right: 30px;
         }
     }
+
+    .compteur {
+        display: none;
+        position: absolute;
+        font-weight: 500;
+        font-size: 18px;
+        margin: auto;
+        color: white;
+        bottom: 50px;
+        left: 0px;
+        text-align: center;
+
+        @media (min-width: $trigger-point) {
+            display: block;
+            right: 30px;
+        }
+    }
 }
